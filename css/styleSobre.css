@@ -1,0 +1,31 @@
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.sobre {
+  text-align: center;
+  font-family: var(--fontPadrao1, Arial, sans-serif);
+}
+
+.sobre h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.sobre img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.text-decription{
+  width: 700px;
+  left: 600px;
+position: relative;
+margin-bottom: 30px;
+}
+
+
+
+

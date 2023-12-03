@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Passion+One:wght@700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: none;
+}
+
+:root { 
+        --cor0: #E3A34B;
+        --cor1: #FCC51E;
+        --cor2: #E6D627;
+        --cor3: #8FA851;
+        --cor4: #5F815A;
+        --cor5: #e4884b;
+    }
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+
+.banner {
+    width: 100%;
+    height: 350px;
+    background-image: url(../imgs/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+#loja {            
+    text-align: center;
+    padding-top: 4rem ;
+    font-family: 'Gabriela', serif;
+    font-size: 15rem;
+    color: white;
+    text-shadow: -1px -1px 0px black;
+}
+
+/* Marketplace */
+
+.marketplace {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.marketplace h1 {
+    margin-top: 5rem;
+    margin-bottom: 0px;
+    font-family: 'Gabriela', serif;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0px black;
+}
+
+.itens-marketplace {
+    width: 88%;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-marketplace .info-product {
+    background-color: #e4884b8d;
+    border: none;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.itens-marketplace .info-product {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.itens-marketplace .info-product h3 {
+    font-family: 'Gabriela', sans-serif;
+    padding-left: 0.7rem;
+}
+
+.itens-marketplace .info-product h4 {
+    font-family: 'Gabriela', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.7rem;
+}
+
+.itens-marketplace .info-product h5 {
+    font-size: 1.4rem;
+    font-family: 'Gabriela', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    margin-top: 0.2rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+
+.itens-marketplace div {
+    box-shadow: 0px 0px 2px 0px solid rgba(0, 0, 0, 0.875);
+}
+
+.itens-marketplace .info-product h5 span {
+    font-size: 1.6rem;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+
+.itens-marketplace div {
+    
+    height: 65%;
+}
+
+.itens-marketplace img {
+    width: 100%;
+    border-top-right-radius: 15px;
+}
+
+.itens-marketplace .comprar {
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: var(--cor0);
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 0px;    
+    transition: all 400ms ease-in;
+}
+
+.itens-marketplace .comprar:hover {
+    background-color: #fcc41e75;
+}
+
+@media (max-width: 395px) {
+
+    .banner {
+    width: 100%;
+    height: 350px;
+    background-image: url(../imgs/banner.jpg);
+    }
+}
